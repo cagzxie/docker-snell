@@ -2,7 +2,7 @@ FROM alpine:edge as builder
 
 LABEL maintainer="metowolf <i@i-meto.com>"
 
-ENV SNELL_VERSION 2.0.0
+ENV SNELL_VERSION 2.0.4
 
 RUN apk update \
   && apk add --no-cache \
@@ -21,7 +21,7 @@ LABEL maintainer="metowolf <i@i-meto.com>"
 ENV GLIBC_VERSION 2.29-r0
 
 ENV SERVER_HOST 0.0.0.0
-ENV SERVER_PORT 8388
+ENV SERVER_PORT 80
 ENV PSK=
 ENV OBFS http
 ENV ARGS=
